@@ -1,0 +1,10 @@
+Cube files are very common in computational chemistry to describe volumetric
+data (e.g., electron density).
+As per the CUBE file format specification described at
+http://h5cube-spec.readthedocs.io/en/latest/cubeformat.html
+all quantities are in atomic units.
+Consequently, volumetric data is in units of 1/Bohr^3, which is sometimes
+inconvenient for atomic physicists.
+The accompanying Python script converts the volumetric data to 1/Angstrom^3.
+It also allows to (linearly) interpolate the original data to a different grid
+size.
